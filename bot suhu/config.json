@@ -1,0 +1,21 @@
+{
+  "modbus": {
+    "host": "10.10.0.100",
+    "port": 502,
+    "device_id": 1,
+    "register_address": 0,
+    "register_count": 2,
+    "timeout_seconds": 3,
+    "scale": 10
+  },
+  "mqtt": {
+    "host": "broker.emqx.io",
+    "port": 1883,
+    "keepalive_seconds": 60,
+    "topic": "suhu_ukdc",
+    "qos": 1,
+    "client_id": "modbus-mqtt-gabriel-243407016"
+  },
+  "poll_interval_seconds": 5,
+  "retry_interval_seconds": 5
+}
